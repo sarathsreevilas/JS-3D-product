@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box; 
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container{
+    width: 700px;
+    min-height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    perspective: 1000px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    width: 50%;
+    border-radius: 5px;
+    padding: 30px 50px;
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.1), 0 2px 15px rgb(0, 0, 0, 0.2) ;
+    transform-style: preserve-3d;
+    border-radius: 50px;
+}
+
+.card-img{
+    position: relative;
+}
+
+.card img{
+    width: 150px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    transition: all ease 0.8s;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, rgb(253, 192, 78) 50%, rgb(111, 178, 255) 100%);
+
+}
+
+.card .card-circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(253, 192, 78) 50%, rgb(111, 178, 255) 100%);
+}
+
+.card-info{
+    margin-top: 50px;
+}
+
+.card-title{
+    margin-bottom: 15px;
+}
+
+.card-info p{
+    font-size: 15px;
+    line-height: 22px;
+    transition: all ease 0.5s;
+}
+
+.cta-btn{
+    display: block;
+    text-decoration: none;
+    background-color: #f13535;
+    color: white;
+    padding: 10px 20px;
+    margin: 30px auto;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 60%;
+    transition: all ease 0.3s;
+} 
